@@ -376,7 +376,7 @@ article .icon {
 .project-img {
     border-radius: 2rem;
     width: 90%;
-    height: 90%;
+    height: auto; /* Maintain aspect ratio */
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
 }
@@ -393,6 +393,20 @@ article .icon {
 
 .smaller-font {
     font-size: medium;
+}
+
+.projects-containers-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the items */
+    justify-content: space-between; /* Ensure proper spacing between items */
+    width: 100%;
+}
+
+.projects-box-size {
+    flex: 0 1 calc(33.33% - 20px); /* Set each project to be 33.33% minus the gap */
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 

@@ -131,4 +131,8 @@
     #about {
         margin-top:0.5rem;
     }
+
+    .projects-box-size {
+        flex: 1 1 100%; /* On small screens, each project takes full width */
+    }
 }
