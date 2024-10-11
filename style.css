@@ -454,7 +454,7 @@ article .icon {
     left: 20px; 
     right: 20px;
     color: white; 
-    visibility: hidden !important; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
     z-index: 1; 
     font-size: 1rem; 
     width: calc(100% - 40px); 
