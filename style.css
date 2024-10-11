@@ -303,6 +303,7 @@ section {
 }
 
 .details-container {
+    position: relative; /* may need to delete */
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -376,7 +377,7 @@ article .icon {
 .project-img {
     border-radius: 2rem;
     width: 90%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
 }
@@ -387,8 +388,17 @@ article .icon {
 }
 
 .project-btn {
-    color: black;
+    color: white; 
+    background-color: rgb(163, 163, 163);
     border-color: rgb(163, 163, 163);
+    padding: 1rem 0rem; 
+    font-size: 1rem; 
+    display: inline-block; 
+    word-wrap: break-word; 
+    max-width: 90%; 
+    box-sizing: border-box; 
+    text-align: center; 
+    min-height: 50px; 
 }
 
 .smaller-font {
@@ -398,8 +408,8 @@ article .icon {
 .projects-containers-layout {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between the items */
-    justify-content: space-between; /* Ensure proper spacing between items */
+    gap: 20px; 
+    justify-content: space-between; 
     width: 100%;
 }
 
